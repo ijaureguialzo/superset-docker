@@ -33,7 +33,7 @@ stop:
 restart: stop start
 
 workspace:
-	@docker compose run --rm --service-ports superset /bin/bash
+	@docker compose exec superset /bin/bash
 
 logs:
 	@docker compose logs superset
